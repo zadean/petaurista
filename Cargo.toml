@@ -1,7 +1,9 @@
 [workspace]
 
 members = [
-  "nif/xqerl_datetime_nif",
-  "nif/nif_2",
-  "core/libxdm"
+#  "nif/xqerl_datetime_nif",
+  "nif/xqldb_mem_nodes_nif",
+  "core/libxdm",
+  "nif/fun_stuff"
 ]
+

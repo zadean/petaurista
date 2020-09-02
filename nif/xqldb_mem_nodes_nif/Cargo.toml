@@ -1,11 +1,11 @@
 [package]
-name = "xqerl_datetime_nif"
+name = "xqldb_mem_nodes_nif"
 version = "0.1.0"
 authors = ["Zachary Dean <contact@zadean.com>"]
 edition = "2018"
 
 [lib]
-name = "xqerl_datetime_nif"
+name = "xqldb_mem_nodes_nif"
 path = "src/lib.rs"
 crate-type = ["cdylib"]
 
@@ -14,3 +14,5 @@ crate-type = ["cdylib"]
 [dependencies]
 libxdm = { path = "../../core/libxdm" }
 rustler = "0.21"
+# RustyXML = "0.3.0"
+xml-rs = "0.8.3"

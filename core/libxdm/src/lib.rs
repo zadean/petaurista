@@ -1,37 +1,6 @@
-// pub struct DateTime {
-//     sign: Sign,
-//     year: u8,
-//     month: u8,
-//     day: u8,
-//     hour: u8,
-//     minute: u8,
-//     second: Decimal,
-//     offset: OffSet,
-//     string_value: String,
-// }
+pub mod node_collection;
+pub mod nodes;
+pub mod xpath;
 
-// pub struct OffSet {
-//     sign: Sign,
-//     hour: u8,
-//     min: u8,
-// }
-
-// pub struct Decimal {
-//     int: i64,
-//     scf: u32,
-// }
-
-// pub enum Sign {
-//     Plus,
-//     Minus,
-// }
-
-mod nodes;
-
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+pub use node_collection::{NodeCollection, NodeTup};
+pub use nodes::{Node, NodeId};
